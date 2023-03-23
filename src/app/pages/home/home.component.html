@@ -1,5 +1,7 @@
+<app-header></app-header>
+
 <p>home works!</p>
 
-<a routerLink="/ticket">
-    <app-miniature-ticket></app-miniature-ticket>
-</a>
+<ng-component *ngFor="ticket of ticketList">
+    <app-ticket-card></app-ticket-card>
+</ng-component>
