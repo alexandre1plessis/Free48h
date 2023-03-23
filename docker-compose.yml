@@ -10,3 +10,13 @@ services:
       MYSQL_PASSWORD: myuserpassword
     ports:
       - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: db
+      PMA_USER: myuser
+      PMA_PASSWORD: myuserpassword
+    ports:
+      - "8080:80"
