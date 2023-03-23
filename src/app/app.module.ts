@@ -7,7 +7,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { TicketComponent } from './pages/ticket/ticket.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MyPageComponent } from './pages/my-page/my-page.component';
-import { MiniatureTicketComponent } from './composants/miniature-ticket/miniature-ticket.component';
+import { TicketCardComponent } from './component/ticket-card/ticket-card.component';
+import { HeaderComponent } from './component/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,18 @@ import { MiniatureTicketComponent } from './composants/miniature-ticket/miniatur
     TicketComponent,
     LoginComponent,
     MyPageComponent,
-    MiniatureTicketComponent
+    TicketCardComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+  ]
 })
 export class AppModule { }
