@@ -5,6 +5,6 @@ export class TicketModel {
   categoryId!: number;
   statusId!: number;
   ticketId!: number;
-  date_creation!: Date;
+  date_creation!: Date | string;
 
 }

@@ -1,1 +1,19 @@
-<p>my-page works!</p>
+<h1>{{ ticket.content }}</h1>
+<div class="legendTitle">
+    <div>{{ ticket.date_creation}}</div>
+    <div>État : {{ tabStatus[ticket.statusId] }}</div>
+</div>
+
+<div class="listMessage">
+    <div class="message" *ngFor="let message of tabMessage; let i = index" >
+        <p>{{message[0]}}</p>
+        <br>
+        <div [ngClass]="{'technicien': i%2}">
+            {{message[1]}}
+            <hr>
+            {{tabUser[i%2]}}
+        </div>
+        
+
+    </div>
+</div>

@@ -31,12 +31,20 @@
             </div>
             <div class="createTicket">
                 Vous ne trouvez pas de réponse à votre probleme ?
-                <a [routerLink]="['ticket']" class="writeTicket"> Ecrire une demande.</a>
+                <a [routerLink]="['createTicket']" class="writeTicket"> Ecrire une demande.</a>
             </div>
         </div>
 
         <div class="ticketList">
+            <div class="ticket" *ngFor="let ticket of tabTickets">
+                <h3>{{ticket.content}}</h3>
+                <div class="legend">
+                    <p>{{tabCategory[ticket.categoryId]}}</p>
+                    <p>{{ticket.date_creation}}</p>
+                </div>
+                <div class="pin">Résolu</div>
 
+            </div>
         </div>
     </div>
 </div>

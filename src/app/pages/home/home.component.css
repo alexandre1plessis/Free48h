@@ -169,18 +169,31 @@
     gap: 10px;
 }
 
+
+.ticket{
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 0 5px 5px black;
+    padding: 10px 10px 10px 20px;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 350px;
+}
+
 .ticket h3{
     font-size: 120%;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
-.ticket{
-    background-color: gainsboro;
-    padding: 10px 10px 10px 20px;
+.legend {
     display: flex;
-    flex-direction: column;
-    border-radius: 5px;
+    justify-content: space-between  ;
+}
+.pin {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 @media screen and (max-width:766px) {

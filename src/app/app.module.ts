@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule, Routes } from '@angular/router';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import { AddTicketComponent } from './pages/add-ticket/add-ticket.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,6 +30,7 @@ const appRoutes: Routes = [
     MyPageComponent,
     TicketCardComponent,
     HeaderComponent,
+    AddTicketComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     MatIconModule,
     MatCheckboxModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [
