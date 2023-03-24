@@ -119,42 +119,34 @@
 
 .second-content{
     display: flex;
-    flex-direction: row;
+    gap: 30px;
     margin: 40px 80px;
 }
 
-.second-content-1{
-    flex: 1;
+.leftContainer{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: left;
+    gap: 20px;
+    max-width: 200px;
 }
 
-@media screen and (min-width:766px) {
-    .second-content-1 .second-sub-content-1{
-        padding: 20px 20px;
-
-    }
-}
-.second-content-1 .second-sub-content-1{
-    border: solid;
-    border-width: 1px;
-    border-color: #7E0100;
+.filtres{
+    border: 1px solid black;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    justify-content: left;
+    padding: 15px;
 
 }
-
-.second-sub-content-1 label{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+.filtres label{
     margin-top: 10px;
+}
+
+.writeTicket {
+    color: unset;
 }
 
 .second-title{
@@ -171,28 +163,20 @@
     color: #6d6565;
 }
 
-.second-content-2{
-    flex: 5;
-    width: 100%;
+.ticketList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.second-content-2 h3{
+.ticket h3{
     font-size: 120%;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
-.search-result-1{
+.ticket{
     background-color: gainsboro;
-    padding: 10px 10px 10px 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-}
-
-
-.search-result-2{
-    background-color: white;
     padding: 10px 10px 10px 20px;
     display: flex;
     flex-direction: column;
@@ -202,9 +186,6 @@
 @media screen and (max-width:766px) {
     .second-content{
         flex-direction: column;
-    }
-
-    .second-content-1{
     }
 
     .second-sub-content-1{
