@@ -1,13 +1,9 @@
 <header>
-    <img src="../../../assets/img/logo_free.svg" class="logo" title="Free" alt="Free">
+    <img [routerLink]="['']" src="../../../assets/img/logo_free.svg" class="logo" title="Free" alt="Free">
 
     <div class="headerRight">
         <a href="free.fr">Site officiel</a>
         <hr>
-
-        <a class="myAccount">
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-            Espace abonné
-        </a>
+        <a [routerLink]="['login']">Espace abonné</a>
     </div>
 </header>

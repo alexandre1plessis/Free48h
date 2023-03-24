@@ -11,6 +11,13 @@ import { TicketCardComponent } from './component/ticket-card/ticket-card.compone
 import { HeaderComponent } from './component/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule, Routes } from '@angular/router';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'ticket', component: TicketComponent },
+];
 
 @NgModule({
   declarations: [
@@ -27,10 +34,11 @@ import { MatIconModule } from '@angular/material/icon';
     AppRoutingModule,
     HttpClientModule,
     MatIconModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [
     AppComponent,
-  ]
+  ],
 })
 export class AppModule { }
