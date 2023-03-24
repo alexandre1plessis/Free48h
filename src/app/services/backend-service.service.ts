@@ -17,6 +17,10 @@ export class BackendServiceService {
     return this.http.get<TicketModel>(`${environment.apiUrl}/ticket/${id}`)
   } */
 
+  getAllTickets() {
+    return this.http.get<TicketModel>(`${environment.apiUrl}/tickets`);
+  }
+  
    public getTicket =  async function(id:number){
     const response = await fetch(
       `${environment.apiUrl}/ticket/${id}`, {

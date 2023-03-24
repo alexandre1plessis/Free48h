@@ -1,0 +1,17 @@
+<div class="form-group">
+    <form action="validateForm()">
+        <label>Sujet</label>
+        <input [value]="sujet">
+
+        <select class="form-control" id="category" required>
+            <option *ngFor="let category of categoryList" [value]="category">{{category}}</option>
+        </select>
+
+        <label>Description</label>
+        <input type="textarea" placeholder="Décrivez votre problème">
+
+        <input type="file" value="Ajouter une pièce-jointe" accept=".png, .jpeg, .pdf">
+
+        <input type="submit" value="Créer le ticket">
+    </form>
+  </div>
